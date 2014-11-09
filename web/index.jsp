@@ -23,7 +23,8 @@
     <%@include file="WEB-INF/jspf/indexcsss.jspf" %>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-          <!-- <link href="css/responsive.css" rel="stylesheet"> -->
+          <!-- <link href="css/responsive.css" rel="stylesheet"> 
+          -->
     </head>
     <body class="homepage">
         <header id="header">
