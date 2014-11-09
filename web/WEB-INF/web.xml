@@ -20,6 +20,10 @@
         <servlet-name>Index</servlet-name>
         <servlet-class>pe.edu.upeu.rrhh.controlador.Index</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>MantenimientoRegion</servlet-name>
+        <servlet-class>pe.edu.upeu.rrhh.controlador.MantenimientoRegion</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>servletControlLogin</servlet-name>
         <url-pattern>/servletControlLogin</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MantenimientoRegion</servlet-name>
+        <url-pattern>/ManR</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
