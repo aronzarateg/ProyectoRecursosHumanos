@@ -71,18 +71,18 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-                        <li><a href="about-us.html">Acerca de Nosotros</a></li>
-                         <li><a href="ManR">Mantenimiento</a></li>
-                        <li><a href="#">Ofertas de Trabajos</a></li>
+                        <li><a href="about-us.html"><span class="glyphicon glyphicon-tower"></span> Acerca de Nosotros</a></li>
+                         <li><a href="ManR"><span class="glyphicon glyphicon-wrench"></span> Mantenimiento</a></li>
+                        <li><a href="#"> <span class="glyphicon glyphicon-globe"></span> Ofertas de Trabajos</a></li>
                        
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accesos <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="blog-item.html">Envio de curriculum</a></li>
-                                <li><a href="pricing.html">Actualizacion de C</a></li> 
+                                <li><a href="blog-item.html"><span class="glyphicon glyphicon-list-alt"></span> Envio de curriculum</a></li>
+                                <li><a href="pricing.html"><span class="glyphicon glyphicon-cog"></span> Actualizacion de CV</a></li> 
                             </ul>
                         </li>
-                        <li><a href="contact-us.html">Contactos</a></li>                        
+                        <li><a href="contact-us.html"><span class="glyphicon glyphicon-book"></span> Contactos</a></li>                        
                     </ul>
                 </div>
             </div><!--/.container-->
