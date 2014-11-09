@@ -24,6 +24,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
           <!-- <link href="css/responsive.css" rel="stylesheet"> 
+          
           -->
     </head>
     <body class="homepage">
