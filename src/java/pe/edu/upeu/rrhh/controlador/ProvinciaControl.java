@@ -79,6 +79,7 @@ public class ProvinciaControl extends HttpServlet {
                     }else{
                         out.println("<h3>Error al modificar registro..!!</h3>");
                     }
+            
             case 5: pagina = "/Prov?op=1";
                     regi.setIdregion(Integer.parseInt(request.getParameter("region")));
                     regi.setNombreprovincia(request.getParameter("provincia"));
