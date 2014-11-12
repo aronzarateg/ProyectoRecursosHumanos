@@ -21,6 +21,7 @@
         <servlet-class>pe.edu.upeu.rrhh.controlador.Index</servlet-class>
     </servlet>
     <servlet>
+<<<<<<< HEAD
         <servlet-name>MantenimientoRegion</servlet-name>
         <servlet-class>pe.edu.upeu.rrhh.controlador.MantenimientoRegion</servlet-class>
     </servlet>
@@ -31,6 +32,10 @@
     <servlet>
         <servlet-name>ProvinciaControl</servlet-name>
         <servlet-class>pe.edu.upeu.rrhh.controlador.ProvinciaControl</servlet-class>
+=======
+        <servlet-name>PerfilControl</servlet-name>
+        <servlet-class>pe.edu.upeu.rrhh.controlador.PerfilControl</servlet-class>
+>>>>>>> origin/master
     </servlet>
     <servlet-mapping>
         <servlet-name>servletControlLogin</servlet-name>
@@ -53,6 +58,7 @@
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+<<<<<<< HEAD
         <servlet-name>MantenimientoRegion</servlet-name>
         <url-pattern>/ManR</url-pattern>
     </servlet-mapping>
@@ -63,6 +69,10 @@
     <servlet-mapping>
         <servlet-name>ProvinciaControl</servlet-name>
         <url-pattern>/Prov</url-pattern>
+=======
+        <servlet-name>PerfilControl</servlet-name>
+        <url-pattern>/perfil</url-pattern>
+>>>>>>> origin/master
     </servlet-mapping>
     <session-config>
         <session-timeout>

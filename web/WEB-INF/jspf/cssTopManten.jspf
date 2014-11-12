@@ -8,7 +8,7 @@
             <a href="region?op=1" class="btn btn-mini btn-primary" role="button">Region</a>
             <a href="Prov?op=1" class="btn btn-mini btn-primary" role="button">Provincia</a>
             <a href="perfil?op=1" class="btn btn-mini btn-primary" role="button"><span class="glyphicon glyphicon-list"></span> Perfil</a>
-            
+            <a href="perfil?op=1" class="btn btn-mini btn-primary" role="button">Perfil</a>
         </div>
     </div>
 
