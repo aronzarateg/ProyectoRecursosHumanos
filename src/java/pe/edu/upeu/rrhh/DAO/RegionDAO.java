@@ -124,4 +124,9 @@ public class RegionDAO implements InterfaceRegion{
         }
         return delete;
     }
+    /**
+ *connection cx;
+ * preparestatement ps;
+ * resulset 
+ */
 }
