@@ -14,15 +14,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import pe.edu.upeu.rrhh.DAO.RegionDAO;
-import pe.edu.upeu.rrhh.interfaces.InterfaceRegion;
-import pe.edu.upeu.rrhh.modelo.RegionModelo;
+import pe.edu.upeu.rrhh.DAO.ProvinciaDAO;
+import pe.edu.upeu.rrhh.interfaces.InterfaceProvincia;
+import pe.edu.upeu.rrhh.modelo.ProvinciaModelo;
 
 /**
  *
  * @author Dka
  */
-public class RegionControl extends HttpServlet {
+public class ProvinciaControll extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,7 +33,7 @@ public class RegionControl extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-   
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -49,28 +49,29 @@ public class RegionControl extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        InterfaceRegion aO = new RegionDAO();
-        RegionModelo regi = new RegionModelo();
+        InterfaceProvincia aO = new ProvinciaDAO();
+        ProvinciaModelo regi = new ProvinciaModelo();
         HttpSession session = request.getSession(true);
         RequestDispatcher dispatcher; String pagina;
         String op = request.getParameter("op"); int id;
         switch(Integer.parseInt(op)){
-            case 1: pagina = "/vista/Region/ListarRegion.jsp";
+            case 1: pagina = "/vista/Provincia/ListarProvincia.jsp";
                     session.setAttribute("list1", aO.list());
                     dispatcher = getServletContext().getRequestDispatcher(pagina);
                     dispatcher.forward(request, response);
-            case 2: pagina = "/vista/Region/IngresarRegion.jsp";
+            case 2: pagina = "/vista/Provincia/IngresarProvincia.jsp";
                     //session.setAttribute("list", aO.list());
                     dispatcher = getServletContext().getRequestDispatcher(pagina);
                     dispatcher.forward(request, response);
-            case 3: pagina = "/vista/Region/ModificarRegion.jsp";
+            case 3: pagina = "/vista/Provincia/ModificarProvincia.jsp";
                     id = Integer.parseInt(request.getParameter("id"));
                     session.setAttribute("list2", aO.list(id));
                     dispatcher = getServletContext().getRequestDispatcher(pagina);
                     dispatcher.forward(request, response);
-            case 4: pagina = "/region?op=1";
-                    regi.setIdregion(Integer.parseInt(request.getParameter("id")));
-                    regi.setNombreregion(request.getParameter("region"));
+            case 4: pagina = "/Prov?op=1";
+                    regi.setIdprovincia(Integer.parseInt(request.getParameter("id")));
+                    regi.setIdregion(Integer.parseInt(request.getParameter("region")));
+                    regi.setNombreprovincia(request.getParameter("provincia"));
                     
                     if(aO.edit(regi)){
                     dispatcher = getServletContext().getRequestDispatcher(pagina);
@@ -78,8 +79,10 @@ public class RegionControl extends HttpServlet {
                     }else{
                         out.println("<h3>Error al modificar registro..!!</h3>");
                     }
-            case 5: pagina = "/region?op=1";
-                    regi.setNombreregion(request.getParameter("region"));
+            
+            case 5: pagina = "/Prov?op=1";
+                    regi.setIdregion(Integer.parseInt(request.getParameter("region")));
+                    regi.setNombreprovincia(request.getParameter("provincia"));
                   
                     if(aO.save(regi)){
                     dispatcher = getServletContext().getRequestDispatcher(pagina);
@@ -87,7 +90,7 @@ public class RegionControl extends HttpServlet {
                     }else{
                         out.println("<h3>Error AL guardar registro..!!</h3>");
                     }
-            case 6: pagina = "/region?op=1";
+            case 6: pagina = "/Prov?op=1";
                     id = Integer.parseInt(request.getParameter("id"));
                     if(aO.delete(id)){
                     dispatcher = getServletContext().getRequestDispatcher(pagina);

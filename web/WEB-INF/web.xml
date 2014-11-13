@@ -1,76 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <servlet>
-        <servlet-name>servletControlLogin</servlet-name>
-        <servlet-class>controller.servletControlLogin</servlet-class>
+        <servlet-name>IIndex</servlet-name>
+        <servlet-class>pe.edu.upeu.rrhh.controlador.IIndex</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>servletControlLogueo</servlet-name>
-        <servlet-class>controller.servletControlLogueo</servlet-class>
+        <servlet-name>MantenimientoRegionn</servlet-name>
+        <servlet-class>pe.edu.upeu.rrhh.controlador.MantenimientoRegionn</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>InterfaceRegion</servlet-name>
-        <servlet-class>pe.edu.upeu.rrhh.interfaces.InterfaceRegion</servlet-class>
+        <servlet-name>PerfillControl</servlet-name>
+        <servlet-class>pe.edu.upeu.rrhh.controlador.PerfillControl</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>RegionControl</servlet-name>
-        <servlet-class>pe.edu.upeu.rrhh.controlador.RegionControl</servlet-class>
+        <servlet-name>ProvinciaControll</servlet-name>
+        <servlet-class>pe.edu.upeu.rrhh.controlador.ProvinciaControll</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Index</servlet-name>
-        <servlet-class>pe.edu.upeu.rrhh.controlador.Index</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>MantenimientoRegion</servlet-name>
-        <servlet-class>pe.edu.upeu.rrhh.controlador.MantenimientoRegion</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>PerfilControl</servlet-name>
-        <servlet-class>pe.edu.upeu.rrhh.controlador.PerfilControl</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ProvinciaControl</servlet-name>
-        <servlet-class>pe.edu.upeu.rrhh.controlador.ProvinciaControl</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>PerfilControl</servlet-name>
-        <servlet-class>pe.edu.upeu.rrhh.controlador.PerfilControl</servlet-class>
+        <servlet-name>RegionControll</servlet-name>
+        <servlet-class>pe.edu.upeu.rrhh.controlador.RegionControll</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>servletControlLogin</servlet-name>
-        <url-pattern>/servletControlLogin</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>servletControlLogueo</servlet-name>
-        <url-pattern>/servletControlLogueo</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>InterfaceRegion</servlet-name>
-        <url-pattern>/InterfaceRegion</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>RegionControl</servlet-name>
-        <url-pattern>/region</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Index</servlet-name>
+        <servlet-name>IIndex</servlet-name>
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-      <servlet-name>MantenimientoRegion</servlet-name>
+        <servlet-name>MantenimientoRegionn</servlet-name>
         <url-pattern>/ManR</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>PerfilControl</servlet-name>
+        <servlet-name>PerfillControl</servlet-name>
         <url-pattern>/perfil</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>ProvinciaControl</servlet-name>
+        <servlet-name>ProvinciaControll</servlet-name>
         <url-pattern>/Prov</url-pattern>
-   </servlet-mapping>
+    </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>PerfilControl</servlet-name>
-        <url-pattern>/perfil</url-pattern>
+        <servlet-name>RegionControll</servlet-name>
+        <url-pattern>/region</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

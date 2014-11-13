@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Dka
  */
-public class MantenimientoRegion extends HttpServlet {
+public class MantenimientoRegionn extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,10 +38,10 @@ public class MantenimientoRegion extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet MantenimientoRegion</title>");            
+            out.println("<title>Servlet MantenimientoRegionn</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet MantenimientoRegion at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet MantenimientoRegionn at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         } finally {
